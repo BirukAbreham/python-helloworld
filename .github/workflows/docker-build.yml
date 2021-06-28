@@ -5,7 +5,7 @@ on:
       - "main"
 jobs:
   docker:
-    runs-on: [ARM64, AMD64]
+    runs-on: [self-hosted, linux, ARM64]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
